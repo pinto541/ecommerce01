@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-import Copyright from '../core/Copyright';
+import Copyright from '../core/Copyright'; 
 
 import Layout from '../core/Layout';
 import { signup } from '../auth';
@@ -175,13 +175,9 @@ export default function Signup() {
   );
 
   return (
-    <Layout
-      title='Signup page'
-      description='Signup to MERN E-commerce App'
-      className='container col-md-8 offset-md-2'
-    >
+    <>
       {signUpForm()}
       <Copyright />
-    </Layout>
+    </>
   );
 }

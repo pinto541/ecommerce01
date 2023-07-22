@@ -92,13 +92,13 @@ const Search = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      searchSubmit();
+      searchSubmit(e);
     }
   };
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    searchSubmit();
+    searchSubmit(e);
   };
   
  
@@ -132,7 +132,7 @@ const Search = () => {
       <div className='input-group input-group-lg' >
         
   
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={searchSubmit}>
           <TextField
             onChange={handleChange('search')}
             id='outlined-basic'
@@ -140,7 +140,7 @@ const Search = () => {
             className={classes.tField}
             autoComplete='off'
             label={<span>Search by product</span>}
-            onKeyDown={handleKeyDown}
+           
           />
         </form>
       </div>

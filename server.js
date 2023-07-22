@@ -22,7 +22,7 @@ const app = express();
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      'mongodb+srv://pinto541:<password>cluster0.ofwt5cr.mongodb.net/',
+      'mongodb+srv://pinto541:pinto541@cluster0.ofwt5cr.mongodb.net/',
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

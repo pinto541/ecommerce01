@@ -122,11 +122,8 @@ const Shop = () => {
   };
 
   return (
-    <Layout
-      title='Shop page'
-      description='Search and find books'
-      className='container-fluid'
-    >
+    <>
+    
       <Search />
       <div className='row'>
         <div className='col-md-3'>
@@ -161,7 +158,8 @@ const Shop = () => {
         </div>
       </div>
       <Copyright />
-    </Layout>
+     {/* </Layout> */}
+    </>
   );
 };
 
