@@ -280,6 +280,7 @@ const MaterialAppBar = ({ history }) => {
             <AiOutlineShoppingCart style={{ marginLeft: "0.2rem" }} />
           </div>
           <div className={classes.grow} />
+
           <div className={classes.sectionDesktop}>
             <Link style={isActive(history, "/")} to="/">
               <IconButton aria-label="Home" color="inherit">
