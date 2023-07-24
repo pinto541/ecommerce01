@@ -1,8 +1,8 @@
 import React from "react";
 import { API } from "../config";
 
-const ShowImage = ({ item, url }) => (
-  <div className="product-img" style={{ height: "250px" }}>
+const ShowImageProd = ({ item, url }) => (
+  <div className="product-img" style={{ height: "90%" }}>
     <img
       src={`${API}/${url}/photo/${item._id}`}
       alt={item.name}
@@ -19,4 +19,4 @@ const ShowImage = ({ item, url }) => (
   </div>
 );
 
-export default ShowImage;
+export default ShowImageProd;
