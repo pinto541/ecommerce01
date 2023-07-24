@@ -272,7 +272,7 @@ const MaterialAppBar = ({ history }) => {
           </a>
           <a href="/" style={{ color: "#000", textDecoration: "none" }}>
             <Typography className={classes.title} variant="h6" noWrap>
-              WeUgly
+              WeUgly -
             </Typography>
           </a>
           <div className="menu-serch">
